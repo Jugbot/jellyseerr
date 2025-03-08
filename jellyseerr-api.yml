@@ -1150,6 +1150,10 @@ components:
         id:
           type: number
           readOnly: true
+        mediaType:
+          type: string
+          enum: [movie, tv]
+          example: movie
         tmdbId:
           type: number
           readOnly: true
