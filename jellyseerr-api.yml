@@ -1178,6 +1178,46 @@ components:
           type: string
           example: '2020-09-12T10:00:27.000Z'
           readOnly: true
+        downloadStatus:
+          type: array
+          readOnly: true
+          items:
+            $ref: '#/components/schemas/DownloadingItem'
+    DownloadingItem:
+      type: object
+      properties:
+        mediaType:
+          type: string
+          enum: [movie, tv]
+        externalId:
+          type: number
+        size:
+          type: number
+        sizeLeft:
+          type: number
+        status:
+          type: string
+        timeLeft:
+          type: string
+        estimatedCompletionTime:
+          type: string
+          format: date-time
+        title:
+          type: string
+        downloadId:
+          type: string
+        episode:
+          type: object
+          nullable: true
+          properties:
+            seasonNumber:
+              type: number
+            episodeNumber:
+              type: number
+            absoluteEpisodeNumber:
+              type: number
+            id:
+              type: number
     Cast:
       type: object
       properties:
