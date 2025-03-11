@@ -1178,6 +1178,9 @@ components:
           type: string
           example: '2020-09-12T10:00:27.000Z'
           readOnly: true
+        mediaUrl:
+          type: string
+          nullable: true
         downloadStatus:
           type: array
           readOnly: true
