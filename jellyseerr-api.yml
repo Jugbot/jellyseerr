@@ -141,6 +141,7 @@ components:
         - email
         - createdAt
         - updatedAt
+        - displayName
     UserSettings:
       type: object
       properties:
