@@ -641,6 +641,7 @@ components:
           example: false
         mediaInfo:
           $ref: '#/components/schemas/MediaInfo'
+          nullable: true
     TvResult:
       type: object
       properties:
@@ -684,6 +685,7 @@ components:
           type: string
         mediaInfo:
           $ref: '#/components/schemas/MediaInfo'
+          nullable: true
     PersonResult:
       type: object
       properties:
