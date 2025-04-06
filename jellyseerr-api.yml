@@ -640,8 +640,9 @@ components:
           type: boolean
           example: false
         mediaInfo:
-          $ref: '#/components/schemas/MediaInfo'
           nullable: true
+          allOf:
+          - $ref: '#/components/schemas/MediaInfo'
     TvResult:
       type: object
       properties:
@@ -684,8 +685,9 @@ components:
         firstAirDate:
           type: string
         mediaInfo:
-          $ref: '#/components/schemas/MediaInfo'
           nullable: true
+          allOf:
+          - $ref: '#/components/schemas/MediaInfo'
     PersonResult:
       type: object
       properties:
