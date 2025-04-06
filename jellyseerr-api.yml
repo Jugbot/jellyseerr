@@ -919,7 +919,9 @@ components:
         externalIds:
           $ref: '#/components/schemas/ExternalIds'
         mediaInfo:
-          $ref: '#/components/schemas/MediaInfo'
+          nullable: true
+          allOf:
+          - $ref: '#/components/schemas/MediaInfo'
         watchProviders:
           type: array
           items:
@@ -1106,7 +1108,9 @@ components:
           items:
             $ref: '#/components/schemas/Keyword'
         mediaInfo:
-          $ref: '#/components/schemas/MediaInfo'
+          nullable: true
+          allOf:
+          - $ref: '#/components/schemas/MediaInfo'
         watchProviders:
           type: array
           items:
